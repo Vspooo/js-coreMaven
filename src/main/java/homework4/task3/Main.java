@@ -71,7 +71,7 @@ public class Main {
         skillsFive.add(new Skills("Python",2));
         users.add(new User(5,"Volodia","Voloshyn","email5",19,Gender.MALE,skillsFive,"Tesla model S",2021,400));
 
-        System.out.println(users);
+        users.forEach(s -> System.out.println(s));
 
 
 

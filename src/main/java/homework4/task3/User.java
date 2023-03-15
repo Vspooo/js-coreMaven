@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class User implements Comparable {
+public class User implements Comparable<User> {
     private int id;
     private String name;
     private String surname;
@@ -35,7 +35,7 @@ public class User implements Comparable {
 
 
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public int compareTo(User o) {
+        return this.skills.size() - o.skills.size();
     }
 }
